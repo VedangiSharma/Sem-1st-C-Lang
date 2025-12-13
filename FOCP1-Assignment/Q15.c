@@ -26,17 +26,17 @@ int main() {
     }
     printf("\n");
 
-    // Array Transformation Logic (Cyclic Rotation)
+    // Array 
     if (n > 1) {
-        // 1. Store the last element (the one that will wrap around)
+        // 1. Store the last element 
         temp = arr[n - 1];
 
-        // 2. Shift all elements from index n-2 down to 0, one position to the right
+        // 2. Shift all elements one position to the right
         for (int i = n - 1; i > 0; i--) {
             arr[i] = arr[i - 1];
         }
 
-        // 3. Place the stored last element at the first position
+        // 3.last element at the first position
         arr[0] = temp;
     }
 
@@ -47,4 +47,5 @@ int main() {
     printf("\n");
 
     return 0;
+
 }
